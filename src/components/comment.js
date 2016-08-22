@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CommentConfirmation from './comment-confirmation';
 
 export default class Comment extends React.Component {
@@ -14,10 +15,10 @@ export default class Comment extends React.Component {
 
     let commentBody;
 
-    if (!this.state.isAbusive) {
-      commentBody = this.props.body;
-    } else {
+    if (this.state.isAbusive) {
       commentBody = <em>Content marked as abusive</em>;
+    } else {
+      commentBody = this.props.body;
     }
 
     return(
@@ -29,13 +30,11 @@ export default class Comment extends React.Component {
         <p className="comment-body">{commentBody}</p>
 
         <div className="comment-actions">
-
           <CommentConfirmation onConfirm={this._handleDelete.bind(this)}>
-            Delete comment?
+            Delete Comment?
           </CommentConfirmation>
-
           <CommentConfirmation onConfirm={this._toggleAbuse.bind(this)}>
-            Report abuse
+            Report as Abuse
           </CommentConfirmation>
         </div>
       </div>
@@ -46,9 +45,14 @@ export default class Comment extends React.Component {
     this.setState({
       isAbusive: !this.state.isAbusive
     });
+
   }
 
   _handleDelete() {
     this.props.onDelete(this.props.id);
   }
+}
+
+CommentConfirmation.propTypes = {
+  onConfirm: React.PropTypes.func.isRequired
 }

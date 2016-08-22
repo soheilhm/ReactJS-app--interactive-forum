@@ -14,25 +14,19 @@ export default class CommentConfirmation extends React.Component {
     let confirmNode;
 
     if (this.state.showConfirm) {
-      confirmNode = (
+      return (
         <span>
-          <a href="" onClick={this._confirmAction.bind(this)}>Yes </a>
-          <span> - or - </span>
-          <a href="" onClick={this._toggleConfirmMessage.bind(this)}> No</a>
+          <a href="" onClick={this._confirmDelete.bind(this)}>Yes </a> - or - <a href="" onClick={this._toggleConfirmMessage.bind(this)}> No</a>
         </span>
-      )
-    } else {
-      confirmNode = (
-        <a href="" onClick={this._toggleConfirmMessage.bind(this)}>
-          {this.props.children}
-        </a>
       );
+    } else {
+      confirmNode = <a href="" onClick={this._toggleConfirmMessage.bind(this)}>{this.props.children}</a>;
     }
 
     return (
-      <div className="comment-confirm">
+      <span>
         {confirmNode}
-      </div>
+      </span>
     );
   }
 
@@ -45,17 +39,8 @@ export default class CommentConfirmation extends React.Component {
 
   }
 
-  _confirmAction(e) {
+  _confirmDelete(e) {
     e.preventDefault();
     this.props.onConfirm();
-
-    // Returns to original state
-    this.setState({
-      showConfirm: false
-    });
   }
-}
-
-CommentConfirmation.propTypes = {
-  onConfirm: React.PropTypes.func.isRequired
 }

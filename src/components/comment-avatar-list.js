@@ -1,13 +1,10 @@
 import React from 'react';
 
+
 export default class CommentAvatarList extends React.Component {
   render() {
 
     const { avatars = [] } = this.props;
-
-    if (!avatars.length) {
-      return null;
-    }
 
     return (
       <div className="comment-avatars">

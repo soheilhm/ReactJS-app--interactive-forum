@@ -38,6 +38,7 @@ export default class CommentBox extends React.Component {
           </div>
         </div>
       </div>
+
     );
   }
 
@@ -57,7 +58,10 @@ export default class CommentBox extends React.Component {
   _getComments() {
     return this.state.comments.map((comment) => {
       return <Comment
-               {...comment}
+               id={comment.id}
+               author={comment.author}
+               body={comment.body}
+               avatarUrl={comment.avatarUrl}
                onDelete={this._deleteComment.bind(this)}
                key={comment.id} />
     });
@@ -75,7 +79,7 @@ export default class CommentBox extends React.Component {
 
   _addComment(commentAuthor, commentBody) {
 
-    let comment = {
+    const comment = {
       id: this.state.comments.length + 1,
       author: commentAuthor,
       body: commentBody,
