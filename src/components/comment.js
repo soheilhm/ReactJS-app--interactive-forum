@@ -15,10 +15,10 @@ export default class Comment extends React.Component {
 
     let commentBody;
 
-    if (!this.state.isAbusive) {
-      commentBody = this.props.body;
-    } else {
+    if (this.state.isAbusive) {
       commentBody = <em>Content marked as abusive</em>;
+    } else {
+      commentBody = this.props.body;
     }
 
     return(
@@ -45,9 +45,14 @@ export default class Comment extends React.Component {
     this.setState({
       isAbusive: !this.state.isAbusive
     });
+
   }
 
   _handleDelete() {
     this.props.onDelete(this.props.id);
   }
+}
+
+CommentConfirmation.propTypes = {
+  onConfirm: React.PropTypes.func.isRequired
 }
