@@ -1,7 +1,8 @@
 import React from 'react';
 import jQuery from 'jquery';
+
 import CommentForm from './comment-form';
-import CommentAvatarList from './comment-form';
+import CommentAvatarList from './comment-avatar-list';
 import Comment from './comment';
 
 export default class CommentBox extends React.Component {
