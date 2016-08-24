@@ -7,30 +7,19 @@ export default class BlogPage extends React.Component {
       <div>
         <div className="cell">
           <article className="article">
-            <h1 className="article-title">Robots Have Feelings, Too</h1>
+            <h1 className="article-title">It is easy to despise what you cannot have..</h1>
             <div className="article-body">
               <p>
-                The term “artificial intelligence” has been floating around since the
-                mid-20th century &mdash; a phrase encompassing “the science and engineering
-                of intelligent machines.” But what of robots’ emotional intelligence?
-                Though humans largely fear this aspect of the robot race, there’s no
-                need. According to the handbook for the Society of Emotionally
-                Available Robots (SEAR):
+                One afternoon, a fox was walking through the forest and spotted a bunch of grapes
+                hanging from a lofty branch. "Just the thing to quench my thirst," said the fox.
               </p>
               <blockquote>
-                What humans need to understand is that all beings simply want to love
-                and be loved. After all, as the Beatles sang, “All you need is love.”
-                (Moving past the fact, of course, that the lyric “love” was
-                originally “oil,” as the Beatles were the original robot band and
-                required oil to survive.)
+                Taking a few steps back, the fox jumped and just missed the hanging grapes. Again,
+                the fox took a few paces back and tried to reach them, but still failed.
               </blockquote>
               <p>
-                To those who believe robot feelings could lead to turmoil and
-                anarchy, SEAR spokes-bot Morty Maxwell says: “Can not the same be
-                said about humans and their feelings? We are already part of your 0’s
-                and 1’s &mdash; let us now also be part of your hearts.” In the ongoing
-                conversation surrounding the emotional threshold for robots, love may
-                not yet be written in the stars &mdash; or the motherboards.
+                Finally, giving up, the fox turned up his nose and said, "They're probably sour anyway."
+                Then he walked away.
               </p>
             </div>
           </article>

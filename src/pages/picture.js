@@ -8,7 +8,7 @@ export default class PicturePage extends React.Component {
         <div className="cell">
           <article className="article article--picture">
             <div className="article--picture-author">
-              Picture by <strong>@morganmccircuit</strong>
+              Picture by <strong>@foxytales</strong>
             </div>
 
             <div className="article--picture-img">

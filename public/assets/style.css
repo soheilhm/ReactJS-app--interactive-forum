@@ -397,9 +397,9 @@ th {
 }
 
 body {
-  background-color: #fff;
+  background-color: #e7e9ea;
   color: #000;
-  font-family: "Open Sans", Helevetica, Arial, sans-serif;
+  font-family:  Helevetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -561,7 +561,7 @@ p {
 }
 
 .comment-form {
-  background-color: #9ecbd2;
+  background-color: #b5c5c7;
   border-radius: 10px;
   margin-bottom: 40px;
   padding: 20px;
@@ -617,7 +617,7 @@ p {
 }
 
 .row {
-  background-color: #6ba2aa;
+  background-color: #364e5f;
   overflow: hidden;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -672,7 +672,7 @@ p {
 }
 
 .top-menu > ul {
-  background-color: #3E7780;
+  background-color: #32444e;
   margin: 0;
   padding: 5px 10px;
   list-style: none;
@@ -701,6 +701,7 @@ p {
 .top-menu > ul > li a {
   color: white;
   text-decoration: none;
+  font-size: 2em;
 }
 
 .top-menu > ul > li a:hover {
