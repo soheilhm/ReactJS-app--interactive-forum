@@ -83,6 +83,7 @@ template {
  */
 a {
   background-color: transparent;
+ 
 }
 
 /**
@@ -706,4 +707,12 @@ p {
 
 .top-menu > ul > li a:hover {
   text-decoration: underline;
+}
+
+.l-footer {
+    padding: 1em;
+    color: white;
+    background-color: #32444e;
+    clear: left;
+    text-align: center;
 }

@@ -20,7 +20,11 @@ export default class Layout extends React.Component {
         </div>
 
         {this.props.children}
+        <div className="l-footer">
+          <p>Interactive Forum (c) <a href="http://github.com/soheilhm">Soheil Hm</a></p>    
+        </div>
       </div>
+
     )
   }
 }
