@@ -1,9 +1,8 @@
 #ReactJS App-ES2015
 
-Interactive forum
+Single page, interactive forum built with reactjs and component
 
-Run npm install 
-Run npm start
+For demo visist : https://interactive-forum-reactjs.herokuapp.com
 
 
 ~Soheil Hm
