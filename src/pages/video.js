@@ -13,7 +13,7 @@ export default class VideoPage extends React.Component {
             </div>
 
             <div className="article--video-img">
-              <img src="assets/images/video.mp4" />
+              <img src="assets/images/video.jpg" />
             </div>
 
           </article>
